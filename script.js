@@ -1,4 +1,5 @@
 // Jay Shree Swaminarayan
+
 const menuItems = document.querySelector(".menu-items");
 
 function fetchFoodItems(){
@@ -19,16 +20,16 @@ async function getMenu(){
         menuItems.innerHTML += 
         `
         <div class="menu-item">
-            <img class="food-image" src=${item.imgSrc && "./assets/burger.jpg"} alt="food-item">
+            <img class="food-image" src=${item.imgSrc && "../assets/burger.jpg"} alt="food-item">
             <div style="display: flex; justify-content: space-between; width: 90%;">
                 <div>
                     <h4>${item.name}</h4>
                     <h5>$${item.price}/-</h5>    
                 </div>
-                <img class="pointer" width="30px" src="./assets/add-to-cart-logo.svg" alt="add-to-cart-btn">
+                <img class="pointer" width="30px" src="../assets/add-to-cart-logo.svg" alt="add-to-cart-btn">
             </div>
         </div>
-        `
+        `   
     })
 }
 
